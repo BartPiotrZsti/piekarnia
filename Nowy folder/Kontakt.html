@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+        text-align: center;
+        background-color: rgb(241, 198, 90);
+        margin: 0;
+    }
+    p{
+        font-size: 300%;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    input{
+        height: 40px;
+        width: 400px;
+    }
+    textarea{
+        height: 80px;
+        width: 500px;
+    }
+    fieldset{
+        border: 3px solid black;
+    }
+    .druga{
+        background-color: rgb(22, 20, 20);
+        color: white;
+        padding: 15px;
+    }
+</style>
+<body>
+    <p>Skontaktuj się z nami!</p>
+    <form>
+        <fieldset>
+            <legend><h1>Dane osobowe</h1></legend>
+            <label><h3>Imię:</h3></label>
+            <input type="text" placeholder="Wpisz swoje imię" required>
+            <br><br>
+            <label><h3>Drugie imię:</h3></label>
+            <input type="text" placeholder="Wpisz swoje drugie imię" required>
+            <br><br>
+            <label><h3>Nazwisko:</h3></label>
+            <input type="text" placeholder="Wpisz swoje nazwisko" required>
+            <br><br>
+            <label><h3>Numer telefonu:</h3></label>
+            <input type="tel" placeholder="Wpisz swój numer telefonu" pattern="[0-9]{9}" required>
+            <br><br>
+            <label><h3>Adres e-mail:</h3></label>
+            <input type="email" placeholder="Wpisz swój adres e-mail" required>
+            <br><br>
+            <label><h3>Napisz wiadomość:</h3></label>
+            <textarea placeholder="Wiadomość" required></textarea>
+            <br><br>
+            <div class="btn">
+            <input type="submit" value="Wyślij">
+            <input type="reset" value="Resetuj">
+            </div>
+        </fieldset>
+    </form>
+    <br>
+    <div class="druga">
+    <p>Lub skontaktuj się z nami w inny sposób</p>
+    <h1>Numer telefonu: 123 456 789</h1>
+    <h1>Adres e-mail: piekarnia@gmail.com</h1>
+</div>
+</body>
+</html>
